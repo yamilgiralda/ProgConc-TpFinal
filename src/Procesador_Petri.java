@@ -25,7 +25,7 @@ public class Procesador_Petri {
 			/*Multiplicacion de matrices (I*U)*/
 			for(int i=0; i<fil; i++){
 				for (int j=0; j<col; j++){
-					aux[i]+=I[i][j]*U[j];	
+					aux[i]+=I[i][j]*U[j];
 				}
 			}
 			
@@ -44,9 +44,27 @@ public class Procesador_Petri {
 					M[j]=M[j]+aux[j];
 					System.out.println(M[j]);
 				}
-			}			
+			}	
 			
 			System.out.println(disparo_posible);
 			return disparo_posible;
+		}
+		
+		public int[] trans_sens(){
+			/*Ver transiciones sensibilizadas (I*M)*/
+			
+			int fil=I.length;                     // I.length = filas
+			int col=I[0].length;                  //I[0].length = columnas
+			
+			int[] aux2;
+			aux2=new int[fil];
+			
+			for(int i=0; i<fil; i++){
+				for (int j=0; j<col; j++){
+					aux2[i]+=I[i][j]*M[j];
+				}
+				System.out.println(aux2[i]);
+			}
+			return aux2;
 		}
 }
