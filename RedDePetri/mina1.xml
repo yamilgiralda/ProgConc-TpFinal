@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="BombOFF">
+<graphics>
+<position x="522.5" y="307.5"/>
+</graphics>
+<name>
+<value>BombOFF</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="BombON">
+<graphics>
+<position x="435.0" y="540.0"/>
+</graphics>
+<name>
+<value>BombON</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="H20 ALTO">
+<graphics>
+<position x="690.0" y="345.0"/>
+</graphics>
+<name>
+<value>H20 ALTO</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="H20 BAJO">
+<graphics>
+<position x="690.0" y="555.0"/>
+</graphics>
+<name>
+<value>H20 BAJO</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Metano Alto">
+<graphics>
+<position x="135.0" y="345.0"/>
+</graphics>
+<name>
+<value>Metano Alto</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Metano bajo">
+<graphics>
+<position x="135.0" y="540.0"/>
+</graphics>
+<name>
+<value>Metano bajo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="OperadorEnc">
+<graphics>
+<position x="435.0" y="225.0"/>
+</graphics>
+<name>
+<value>OperadorEnc</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="OperadorNoEnc">
+<graphics>
+<position x="435.0" y="60.0"/>
+</graphics>
+<name>
+<value>OperadorNoEnc</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="ApagarXH2O">
+<graphics>
+<position x="495.0" y="435.0"/>
+</graphics>
+<name>
+<value>ApagarXH2O</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="ApagarXmet">
+<graphics>
+<position x="270.0" y="435.0"/>
+</graphics>
+<name>
+<value>ApagarXmet</value>
+<graphics>
+<offset x="44.0" y="49.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id=" Bajar H2O">
+<graphics>
+<position x="630.0" y="435.0"/>
+</graphics>
+<name>
+<value> Bajar H2O</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Bajar Met">
+<graphics>
+<position x="75.0" y="435.0"/>
+</graphics>
+<name>
+<value>Bajar Met</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Enc">
+<graphics>
+<position x="510.0" y="135.0"/>
+</graphics>
+<name>
+<value>Enc</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="NoEnc">
+<graphics>
+<position x="360.0" y="135.0"/>
+</graphics>
+<name>
+<value>NoEnc</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="PrenderXH20">
+<graphics>
+<position x="360.0" y="435.0"/>
+</graphics>
+<name>
+<value>PrenderXH20</value>
+<graphics>
+<offset x="25.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="PrenderXOper">
+<graphics>
+<position x="345.0" y="270.0"/>
+</graphics>
+<name>
+<value>PrenderXOper</value>
+<graphics>
+<offset x="11.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>135</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Subir H2O">
+<graphics>
+<position x="765.0" y="435.0"/>
+</graphics>
+<name>
+<value>Subir H2O</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Subir Met">
+<graphics>
+<position x="195.0" y="435.0"/>
+</graphics>
+<name>
+<value>Subir Met</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="BombOFF to Prender Bom" source="BombOFF" target="PrenderXH20">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="328" curvePoint="false"/>
+<arcpath id="001" x="371" y="441" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="BombOFF to PrenderXOper" source="BombOFF" target="PrenderXOper">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="520" y="316" curvePoint="false"/>
+<arcpath id="001" x="363" y="281" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="BombOFF to T0" source="BombOFF" target=" Bajar H2O">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="544" y="330" curvePoint="false"/>
+<arcpath id="001" x="640" y="441" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="BombON to Enc" source="BombON" target="Enc">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="450" y="537" curvePoint="false"/>
+<arcpath id="001" x="526" y="152" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="BombON to T1" source="BombON" target="Subir H2O">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="461" y="547" curvePoint="false"/>
+<arcpath id="001" x="761" y="447" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="BombON to T2" source="BombON" target="ApagarXH2O">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="455" y="539" curvePoint="false"/>
+<arcpath id="001" x="506" y="451" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="BombON to T7" source="BombON" target="ApagarXmet">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="448" y="566" curvePoint="false"/>
+<arcpath id="001" x="450" y="600" curvePoint="false"/>
+<arcpath id="002" x="300" y="600" curvePoint="false"/>
+<arcpath id="003" x="286" y="452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Enc to OperadorEnc" source="Enc" target="OperadorEnc">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="151" curvePoint="false"/>
+<arcpath id="001" x="456" y="225" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="H20 ALTO to T0" source="H20 ALTO" target=" Bajar H2O">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="694" y="370" curvePoint="false"/>
+<arcpath id="001" x="647" y="442" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="H20 ALTO to T2" source="H20 ALTO" target="ApagarXH2O">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="688" y="364" curvePoint="false"/>
+<arcpath id="001" x="521" y="447" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="H20 BAJO to T1" source="H20 BAJO" target="Subir H2O">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="710" y="554" curvePoint="false"/>
+<arcpath id="001" x="776" y="451" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="H20 BAJO to T3" source="H20 BAJO" target="PrenderXH20">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="688" y="561" curvePoint="false"/>
+<arcpath id="001" x="386" y="447" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Metano Alto to PrenderXOper" source="Metano Alto" target="PrenderXOper">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="160" y="351" curvePoint="false"/>
+<arcpath id="001" x="350" y="281" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Metano Alto to T0" source="Metano Alto" target=" Bajar H2O">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="161" y="355" curvePoint="false"/>
+<arcpath id="001" x="452" y="317" curvePoint="false"/>
+<arcpath id="002" x="633" y="441" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Metano Alto to T3" source="Metano Alto" target="PrenderXH20">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="160" y="363" curvePoint="false"/>
+<arcpath id="001" x="356" y="447" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Metano Alto to T5" source="Metano Alto" target="Bajar Met">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="138" y="369" curvePoint="false"/>
+<arcpath id="001" x="86" y="441" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Metano bajo to T6" source="Metano bajo" target="Subir Met">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="155" y="539" curvePoint="false"/>
+<arcpath id="001" x="206" y="451" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Metano bajo to T7" source="Metano bajo" target="ApagarXmet">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="159" y="542" curvePoint="false"/>
+<arcpath id="001" x="276" y="451" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="NoEnc to OperadorNoEnc" source="NoEnc" target="OperadorNoEnc">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="371" y="141" curvePoint="false"/>
+<arcpath id="001" x="435" y="82" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="OperadorEnc to NoEnc" source="OperadorEnc" target="NoEnc">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="437" y="225" curvePoint="false"/>
+<arcpath id="001" x="376" y="152" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="OperadorEnc to PrenderXOper" source="OperadorEnc" target="PrenderXOper">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="433" y="242" curvePoint="false"/>
+<arcpath id="001" x="356" y="274" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="OperadorNoEnc to Enc" source="OperadorNoEnc" target="Enc">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="458" y="82" curvePoint="false"/>
+<arcpath id="001" x="521" y="141" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Prender Bom to BombON" source="PrenderXH20" target="BombON">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="371" y="451" curvePoint="false"/>
+<arcpath id="001" x="438" y="540" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="PrenderXOper to BombON" source="PrenderXOper" target="BombON">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="356" y="289" curvePoint="false"/>
+<arcpath id="001" x="344" y="554" curvePoint="false"/>
+<arcpath id="002" x="432" y="552" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="PrenderXOper to OperadorNoEnc" source="PrenderXOper" target="OperadorNoEnc">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="271" curvePoint="false"/>
+<arcpath id="001" x="284" y="134" curvePoint="false"/>
+<arcpath id="002" x="433" y="77" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Subir H2O to H20 ALTO" source="Subir H2O" target="H20 ALTO">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="776" y="441" curvePoint="false"/>
+<arcpath id="001" x="711" y="368" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T0 to H20 BAJO" source=" Bajar H2O" target="H20 BAJO">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="641" y="451" curvePoint="false"/>
+<arcpath id="001" x="695" y="554" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to BombOFF" source="ApagarXH2O" target="BombOFF">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="506" y="441" curvePoint="false"/>
+<arcpath id="001" x="530" y="334" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to Metano bajo" source="Bajar Met" target="Metano bajo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="86" y="451" curvePoint="false"/>
+<arcpath id="001" x="139" y="539" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T6 to Metano Alto" source="Subir Met" target="Metano Alto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="206" y="441" curvePoint="false"/>
+<arcpath id="001" x="155" y="369" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to BombOFF" source="ApagarXmet" target="BombOFF">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="281" y="441" curvePoint="false"/>
+<arcpath id="001" x="345" y="405" curvePoint="false"/>
+<arcpath id="002" x="450" y="360" curvePoint="false"/>
+<arcpath id="003" x="520" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<labels x="399" y="515" width="105" height="21" border="true">
+<text>EXTERIOR</text>
+</labels>
+<labels x="392" y="35" width="105" height="21" border="true">
+<text>MINA</text>
+</labels>
+<place id="Cargado">
+<graphics>
+<position x="330.0" y="90.0"/>
+</graphics>
+<name>
+<value>Cargado</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Cargando">
+<graphics>
+<position x="510.0" y="90.0"/>
+</graphics>
+<name>
+<value>Cargando</value>
+<graphics>
+<offset x="81.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Pueden Viajar">
+<graphics>
+<position x="405.0" y="255.0"/>
+</graphics>
+<name>
+<value>Pueden Viajar</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Vaciado">
+<graphics>
+<position x="510.0" y="435.0"/>
+</graphics>
+<name>
+<value>Vaciado</value>
+<graphics>
+<offset x="75.0" y="1.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Vaciando">
+<graphics>
+<position x="330.0" y="435.0"/>
+</graphics>
+<name>
+<value>Vaciando</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Viajando a Exterior">
+<graphics>
+<position x="240.0" y="255.0"/>
+</graphics>
+<name>
+<value>Viajando a Exterior</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Viajando a Mina">
+<graphics>
+<position x="570.0" y="255.0"/>
+</graphics>
+<name>
+<value>Viajando a Mina</value>
+<graphics>
+<offset x="109.0" y="5.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="T1">
+<graphics>
+<position x="285.0" y="345.0"/>
+</graphics>
+<name>
+<value>T1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2">
+<graphics>
+<position x="420.0" y="435.0"/>
+</graphics>
+<name>
+<value>T2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T4">
+<graphics>
+<position x="555.0" y="165.0"/>
+</graphics>
+<name>
+<value>T4</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T5">
+<graphics>
+<position x="420.0" y="90.0"/>
+</graphics>
+<name>
+<value>T5</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T7">
+<graphics>
+<position x="405.0" y="315.0"/>
+</graphics>
+<name>
+<value>T7</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>270</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T8">
+<graphics>
+<position x="465.0" y="240.0"/>
+</graphics>
+<name>
+<value>T8</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Cargado to T8" source="Cargado" target="T8">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="352" y="113" curvePoint="false"/>
+<arcpath id="001" x="476" y="246" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Cargando to T5" source="Cargando" target="T5">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="507" y="102" curvePoint="false"/>
+<arcpath id="001" x="436" y="102" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pueden Viajar to T7" source="Pueden Viajar" target="T7">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="417" y="281" curvePoint="false"/>
+<arcpath id="001" x="417" y="322" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 to Vaciando" source="T1" target="Vaciando">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="296" y="361" curvePoint="false"/>
+<arcpath id="001" x="334" y="433" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to Vaciado" source="T2" target="Vaciado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="436" y="447" curvePoint="false"/>
+<arcpath id="001" x="507" y="447" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T4 to Cargando" source="T4" target="Cargando">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="566" y="171" curvePoint="false"/>
+<arcpath id="001" x="530" y="114" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to Cargado" source="T5" target="Cargado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="426" y="102" curvePoint="false"/>
+<arcpath id="001" x="356" y="102" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to Viajando a Exterior" source="T7" target="Viajando a Exterior">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="402" y="326" curvePoint="false"/>
+<arcpath id="001" x="265" y="272" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to Viajando a Mina" source="T7" target="Viajando a Mina">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="326" curvePoint="false"/>
+<arcpath id="001" x="568" y="272" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T8 to Pueden Viajar" source="T8" target="Pueden Viajar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="461" y="252" curvePoint="false"/>
+<arcpath id="001" x="431" y="262" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Vaciado to T8" source="Vaciado" target="T8">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="518" y="432" curvePoint="false"/>
+<arcpath id="001" x="476" y="256" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Vaciando to T2" source="Vaciando" target="T2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="356" y="447" curvePoint="false"/>
+<arcpath id="001" x="426" y="447" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Viajando a Exterior to T1" source="Viajando a Exterior" target="T1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="258" y="280" curvePoint="false"/>
+<arcpath id="001" x="296" y="351" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Viajando a Mina to T4" source="Viajando a Mina" target="T4">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="579" y="252" curvePoint="false"/>
+<arcpath id="001" x="566" y="181" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
